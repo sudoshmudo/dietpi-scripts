@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if command -v git &> /dev/null
+if command -v doppler &> /dev/null
 then
-    echo "git already installed"
+    echo "doppler already installed"
     exit
 fi
 
