@@ -2,7 +2,7 @@
 
 if command -v doppler &> /dev/null
 then
-    echo "doppler already installed"
+    echo "Doppler already installed"
     exit
 fi
 
