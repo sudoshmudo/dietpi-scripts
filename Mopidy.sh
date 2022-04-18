@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if command -v mopidy &> /dev/null
+then
+    echo "Mopidy already installed"
+    exit
+fi
+
 # Doppler
 chmod +x Doppler.sh
 ./Doppler.sh
@@ -7,12 +13,6 @@ chmod +x Doppler.sh
 # CurlFtpFS
 chmod +x CurlFtpFS.sh
 ./CurlFtpFS.sh
-
-if command -v mopidy &> /dev/null
-then
-    echo "Mopidy already installed"
-    exit
-fi
 
 # install Mopidy
 dietpi-software install 118
