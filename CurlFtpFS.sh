@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if command -v curlftpfs &> /dev/null
+then
+    echo "CurlFtpFS already installed"
+    exit
+fi
+
 # Doppler
 chmod +x Doppler.sh
 ./Doppler.sh
