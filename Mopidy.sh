@@ -1,8 +1,18 @@
 #!/bin/bash
 
-# call doppler script here
+# Doppler
+chmod +x Doppler.sh
+./Doppler.sh
 
-# call ftp script here
+# CurlFtpFS
+chmod +x CurlFtpFS.sh
+./CurlFtpFS.sh
+
+if command -v mopidy &> /dev/null
+then
+    echo "Mopidy already installed"
+    exit
+fi
 
 # install Mopidy
 dietpi-software install 118
