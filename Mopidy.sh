@@ -39,3 +39,15 @@ sudo python3 -m pip install Mopidy-Bandcamp
 
 # install mopidy tunein
 sudo apt install mopidy-tunein -y
+
+# set environment of repo
+sudo doppler setup --no-interactive --config prd
+
+# stop mopidy
+dietpi-services stop mopidy
+
+# create mopidy config
+sudo doppler run -- envsubst < ./Mopidy/mopidy.conf > /etc/mopidy/mopidy.conf
+
+# start mopidy
+dietpi-services start mopidy
