@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# call doppler script here
+# Doppler
+chmod +x Doppler.sh
+./Doppler.sh
 
 # install CurlFtpFS
 sudo apt-get install curlftpfs -y
