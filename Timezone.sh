@@ -1,3 +1,4 @@
+#!/bin/bash
 
 timezone=$(curl https://ipinfo.io/timezone)
 
