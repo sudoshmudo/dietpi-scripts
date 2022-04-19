@@ -11,7 +11,7 @@ chmod +x Github.sh
 ./Docker.sh
 
 cd ~/git
-git clone https://sudoshmudo@github.com/sudoshmudo/lit.git
+git clone https://github.com/sudoshmudo/lit.git
 
 cd lit
 sudo doppler setup --no-interactive --config prd
