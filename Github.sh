@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/git/dietpi-scripts
+
 chmod +x Doppler.sh
 ./Doppler.sh
 
@@ -10,6 +12,7 @@ chmod +x Docker.sh
 sudo doppler run --command='echo $GITHUB_TOKEN | docker login ghcr.io -u sudoshmudo --password-stdin'
 
 # add Github credentials
+cd ~/git/dietpi-scripts
 sudo doppler run -- envsubst < ./Github/.git-credentials > ~/.git-credentials
 
 git config --global user.email "sudoshmudo"

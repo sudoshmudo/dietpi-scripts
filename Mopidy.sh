@@ -2,15 +2,14 @@
 
 if command -v mopidy &> /dev/null
 then
-    echo "Mopidy already installed"
     exit
 fi
 
-# Doppler
+cd ~/git/dietpi-scripts
+
 chmod +x Doppler.sh
 ./Doppler.sh
 
-# CurlFtpFS
 chmod +x CurlFtpFS.sh
 ./CurlFtpFS.sh
 
@@ -44,6 +43,7 @@ sudo apt install mopidy-tunein -y
 /boot/dietpi/dietpi-services stop mopidy
 
 # create mopidy config
+cd ~/git/dietpi-scripts
 sudo doppler run -- envsubst < ./Mopidy/mopidy.conf > /etc/mopidy/mopidy.conf
 
 # start mopidy

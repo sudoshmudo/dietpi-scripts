@@ -5,6 +5,7 @@ then
     exit
 fi
 
+cd ~/git/dietpi-scripts
 chmod +x Doppler.sh
 ./Doppler.sh
 
@@ -18,6 +19,7 @@ sudo doppler setup --no-interactive --config prd
 sudo mkdir /mnt/music
 
 # create mounting service
+cd ~/git/dietpi-scripts
 sudo doppler run -- envsubst < ./CurlFtpFS/mnt-music.mount > /etc/systemd/system/mnt-music.mount
 
 # start mounting service

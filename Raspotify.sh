@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# install Raspotify
-dietpi-software install 167
+if ! command -v raspotify &> /dev/null
+then
+    /boot/dietpi/dietpi-software install 167
+fi
 
-# copy config file
+cd ~/git/dietpi-scripts
 cp ./Raspotify/raspotify /etc/default/raspotify

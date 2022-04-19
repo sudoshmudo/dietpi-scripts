@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if test -d ~/git/lit; then
+if test -d ~/git/transference; then
     exit
 fi
 
@@ -13,9 +13,9 @@ chmod +x Docker.sh
 ./Docker.sh
 
 cd ~/git
-git clone https://github.com/sudoshmudo/lit.git
+git clone https://github.com/sudoshmudo/transference.git
 
-cd lit
+cd transference
 sudo doppler setup --no-interactive --config prd
 sudo doppler run -- docker-compose up -d
 

@@ -1,11 +1,10 @@
 #!/bin/bash
 
-if test -d ~/git/lit; then
+if test -d ~/git/fin; then
     exit
 fi
 
-cd ~/git/dietpi-scripts
-
+cd cd ~/git/dietpi-scripts
 chmod +x Github.sh
 ./Github.sh
 
@@ -13,9 +12,9 @@ chmod +x Docker.sh
 ./Docker.sh
 
 cd ~/git
-git clone https://github.com/sudoshmudo/lit.git
+git clone https://github.com/sudoshmudo/fin.git
 
-cd lit
+cd fin
 sudo doppler setup --no-interactive --config prd
 sudo doppler run -- docker-compose up -d
 
