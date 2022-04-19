@@ -99,7 +99,7 @@ function multiselect {
     eval $return_value='("${selected[@]}")'
 }
 
-readarray -d '' paths < <(find *.sh -type f ! -name '_select.sh' -print0 | sed 's/.sh//g')
+readarray -d '' paths < <(find *.sh -type f ! -name 'select.sh' -print0 | sed 's/.sh//g')
 my_options=(${paths[@]})
 
 multiselect result my_options
