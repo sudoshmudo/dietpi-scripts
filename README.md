@@ -13,7 +13,7 @@ Steps:
 dietpi-software install 17 && mkdir git && cd git && git clone https://github.com/sudoshmudo/dietpi-scripts.git
 ```
 
-4. Run `_select` script:
+4. Run `select` script:
 ```
-cd dietpi-scripts && chmod +x _select.sh && ./_select.sh
+cd dietpi-scripts && chmod +x select.sh && ./select.sh
 ```
