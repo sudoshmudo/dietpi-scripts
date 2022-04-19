@@ -7,6 +7,9 @@ fi
 
 cd ~/git/dietpi-scripts
 
+chmod +x Alsa.sh
+./Alsa.sh
+
 chmod +x Doppler.sh
 ./Doppler.sh
 
