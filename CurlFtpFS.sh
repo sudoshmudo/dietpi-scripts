@@ -5,7 +5,6 @@ then
     exit
 fi
 
-# Doppler
 chmod +x Doppler.sh
 ./Doppler.sh
 
