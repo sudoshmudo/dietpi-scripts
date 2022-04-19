@@ -30,3 +30,4 @@ sudo cp ./CurlFtpFS/mnt-music.automount /etc/systemd/system/mnt-music.automount
 
 # start auto-mounting service
 sudo systemctl enable mnt-music.automount
+sudo systemctl start mnt-music.automount
