@@ -10,10 +10,10 @@ Steps:
 
 3. Install Git and clone this repo
 ```bash
-dietpi-software install 17 && cd $HOME && mkdir git && cd git && git clone ssh://git@github.com/sudoshmudo/dietpi-scripts.git
+dietpi-software install 17 && mkdir git && cd git && git clone https://github.com/sudoshmudo/dietpi-scripts.git
 ```
 
 4. Run `_select` script:
 ```
-cd $HOME/git/dietpi-scripts && chmod +x _select.sh && ./_select.sh
+cd dietpi-scripts && chmod +x _select.sh && ./_select.sh
 ```

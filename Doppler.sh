@@ -2,7 +2,6 @@
 
 if command -v doppler &> /dev/null
 then
-    echo "Doppler already installed"
     exit
 fi
 
@@ -12,3 +11,5 @@ echo "deb https://packages.doppler.com/public/cli/deb/debian any-version main" |
 sudo apt-get update && sudo apt-get install doppler
 
 doppler login
+
+sudo doppler setup --no-interactive --config prd

@@ -2,7 +2,6 @@
 
 if command -v curlftpfs &> /dev/null
 then
-    echo "CurlFtpFS already installed"
     exit
 fi
 
