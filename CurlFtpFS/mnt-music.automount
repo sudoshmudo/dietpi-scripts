@@ -1,0 +1,10 @@
+[Unit]
+Description=Automount mnt music
+ConditionPathExists=/mnt/music
+
+[Automount]
+Where=/mnt/music
+TimeoutIdleSec=10
+
+[Install]
+WantedBy=multi-user.target
