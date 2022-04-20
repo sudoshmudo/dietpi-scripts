@@ -6,4 +6,8 @@ then
 fi
 
 cd ~/git/dietpi-scripts
+chmod +x Alsa.sh
+./Alsa.sh
+
+cd ~/git/dietpi-scripts
 cp ./Raspotify/raspotify /etc/default/raspotify
