@@ -21,4 +21,3 @@ sudo doppler run -- docker-compose up -d
 
 sudo doppler run -- docker-compose run postgres-backup sh restore.sh
 sudo chmod +x ./postgres/update-passwords.sh && sudo doppler run -- ./postgres/update-passwords.sh
-sudo doppler run -- docker-compose down && sudo doppler run -- docker-compose up -d
