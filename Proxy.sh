@@ -18,4 +18,4 @@ git clone https://github.com/sudoshmudo/proxy.git
 cd proxy
 sudo doppler run -- envsubst < ./ddclient/ddclient.conf.template > ./ddclient/ddclient.conf
 sudo doppler setup --no-interactive --config prd
-sudo doppler run -- docker-compose up -d
+sudo doppler run -- docker compose up -d
