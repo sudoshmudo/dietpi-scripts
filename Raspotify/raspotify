@@ -1,2 +1,2 @@
 BITRATE="320"
-VOLUME_ARGS="--volume-ctrl linear --initial-volume=30"
+VOLUME_ARGS="--volume-ctrl linear --initial-volume=100"
