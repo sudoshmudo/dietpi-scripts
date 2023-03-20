@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if ! command -v docker &> /dev/null
+if ! command docker version &> /dev/null
 then
     /boot/dietpi/dietpi-software install 162
 fi
 
-if ! command -v docker-compose &> /dev/null
+if ! command docker compose version &> /dev/null
 then
     /boot/dietpi/dietpi-software install 134
 fi
