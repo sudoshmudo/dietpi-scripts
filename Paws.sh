@@ -7,7 +7,7 @@ fi
 # add Github credentials
 cd ~/git/dietpi-scripts
 apt-get install gettext-base
-sudo doppler run -- envsubst < ./Github/.git-credentials > ~/.git-credentials
+doppler run -- envsubst < ./Github/.git-credentials > ~/.git-credentials
 
 git config --global user.email "sudoshmudo"
 git config --global user.name "sudoshmudo"
@@ -21,6 +21,6 @@ chmod +x AutoTimezone.sh
 ./AutoTimezone.sh
 
 cd ~/git/paws
-sudo doppler setup --no-interactive --config prd
+doppler setup --no-interactive --config prd
 
 pip3 install -r requirements.txt

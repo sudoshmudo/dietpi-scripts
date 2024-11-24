@@ -15,10 +15,10 @@ cd ~/git
 git clone https://github.com/sudoshmudo/fin.git
 
 cd fin
-sudo doppler setup --no-interactive --config prd
-sudo doppler run -- docker compose up -d
+doppler setup --no-interactive --config prd
+doppler run -- docker compose up -d
 
 sleep 20
-sudo chmod +x ./postgres/init.sh && sudo doppler run -- ./postgres/init.sh
-sudo doppler run -- docker compose run postgres-backup sh restore.sh
-sudo chmod +x ./postgres/update-passwords.sh && sudo doppler run -- ./postgres/update-passwords.sh
+sudo chmod +x ./postgres/init.sh && doppler run -- ./postgres/init.sh
+doppler run -- docker compose run postgres-backup sh restore.sh
+sudo chmod +x ./postgres/update-passwords.sh && doppler run -- ./postgres/update-passwords.sh

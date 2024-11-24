@@ -12,4 +12,4 @@ sudo apt-get update && sudo apt-get install doppler
 
 doppler login
 
-sudo doppler setup --no-interactive --config prd
+doppler setup --no-interactive --config prd

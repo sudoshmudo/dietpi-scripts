@@ -15,5 +15,5 @@ cd ~/git
 git clone https://github.com/sudoshmudo/articles.git
 
 cd articles
-sudo doppler setup --no-interactive --config prd
-sudo doppler run -- docker compose up -d
+doppler setup --no-interactive --config prd
+doppler run -- docker compose up -d

@@ -13,14 +13,14 @@ chmod +x Doppler.sh
 sudo apt-get install curlftpfs -y
 
 # set environment of repo
-sudo doppler setup --no-interactive --config prd
+doppler setup --no-interactive --config prd
 
 # create a ftp_music folder for mounting remote FTP folder
 sudo mkdir /mnt/music
 
 # create mounting service
 cd ~/git/dietpi-scripts
-sudo doppler run -- envsubst < ./CurlFtpFS/mnt-music.mount > /etc/systemd/system/mnt-music.mount
+doppler run -- envsubst < ./CurlFtpFS/mnt-music.mount > /etc/systemd/system/mnt-music.mount
 
 # start mounting service
 sudo systemctl enable mnt-music.mount

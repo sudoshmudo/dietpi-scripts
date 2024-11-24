@@ -47,7 +47,7 @@ sudo apt install mopidy-tunein -y
 
 # create mopidy config
 cd ~/git/dietpi-scripts
-sudo doppler run -- envsubst < ./Mopidy/mopidy.conf > /etc/mopidy/mopidy.conf
+doppler run -- envsubst < ./Mopidy/mopidy.conf > /etc/mopidy/mopidy.conf
 
 # start mopidy
 /boot/dietpi/dietpi-services start mopidy

@@ -15,5 +15,5 @@ cd ~/git
 git clone https://github.com/sudoshmudo/media-cosmos.git
 
 cd media-cosmos
-sudo doppler setup --no-interactive --config prd
-sudo doppler run -- docker compose up -d
+doppler setup --no-interactive --config prd
+doppler run -- docker compose up -d
