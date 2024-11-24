@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if test -d ~/git/beige; then
+if test -d ~/git/media-cosmos; then
     exit
 fi
 
@@ -12,8 +12,8 @@ chmod +x Docker.sh
 ./Docker.sh
 
 cd ~/git
-git clone https://github.com/sudoshmudo/beige.git
+git clone https://github.com/sudoshmudo/media-cosmos.git
 
-cd beige
+cd media-cosmos
 sudo doppler setup --no-interactive --config prd
 sudo doppler run -- docker compose up -d
