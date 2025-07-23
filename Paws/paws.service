@@ -1,0 +1,13 @@
+[Unit]
+Description=Doppler app service
+After=network.target
+
+[Service]
+WorkingDirectory=/root/git/paws
+ExecStart=/usr/bin/doppler run -- python3 main.py
+Restart=always
+Environment=HOME=/root
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
