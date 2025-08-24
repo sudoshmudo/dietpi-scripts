@@ -4,7 +4,7 @@ Installation scripts for DietPi.
 
 Steps:
 
-1. Use balenaEtcher to flash DietPi to SD card.
+1. Use Raspberry Pi Imager to flash DietPi to SD card.
 
 1. If you plan to use wi-fi:
     * edit `dietpi.txt` and set `AUTO_SETUP_NET_WIFI_ENABLED` to 1
