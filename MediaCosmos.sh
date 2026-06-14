@@ -4,7 +4,7 @@ if test -d ~/git/media-cosmos; then
     exit
 fi
 
-cd cd ~/git/dietpi-scripts
+cd ~/git/dietpi-scripts
 chmod +x Github.sh
 ./Github.sh
 
